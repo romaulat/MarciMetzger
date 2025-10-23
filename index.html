@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript -->
+    <script defer src="index.js"></script>
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <!-- Logo Image -->
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="Marci Metzger Homes Logo" />
+            </a>
+
+            <!-- Hamburger Menu Button -->
+            <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+
+                <li class="has-dropdown">
+                    <a href="#">Listings <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="nested-links">
+                        <li><a href="#">Nevada</a></li>
+                        <li><a href="#">Los Angeles</a></li>
+                        <li><a href="#">New Jersey</a></li>
+                    </ul>
+                </li>
+
+                <li class="has-dropdown">
+                    <a href="#">Services <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="nested-links">
+                        <li><a href="#">Real Estate</a></li>
+                        <li><a href="#">Commercial and Residential</a></li>
+                        <li><a href="#">Rely on Expertise</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+
+        </div>
+    </header>
+
+    <!-- Hero Image -->
+     <div class="hero">
+        <div class="hero-info">
+            <p class="hero-description">MARCI METZGER - THE RIDGE REALTY GROUP</p>
+            <h1 class="hero-title">Pahrump Realtor</h1>
+            <button class="contact-button">Call Now</button>
+        </div>
+     </div>
+
+     <!-- About MARCI METZGER -->
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="images/woman.jpg" alt="Marci Metzger, Realtor" />
+            </div>
+
+            <div class="about-content">
+                <h2 class="about-title">Meet Marci Metzger</h2>
+                <p class="about-text">
+                    With nearly <b>three decades</b> of real estate experience and a deep understanding 
+                    of the Pahrump housing market, Marci Metzger is dedicated to helping clients 
+                    find their perfect home. Known for her professionalism, integrity, and personal 
+                    touch, Marci goes above and beyond to make every buying or selling experience 
+                    seamless and rewarding. Her strong negotiation skills and in-depth market insight 
+                    enable her to secure the best outcomes for her clients, whether they’re purchasing
+                     their first home or expanding their investment portfolio. Marci’s approachable 
+                     nature and commitment to open communication ensure that every client feels informed, 
+                     confident, and supported throughout the entire process.
+                </p>
+
+                <div class="about-contact">
+                    <p class="contact-text">
+                    📞 <strong>Call or Text:</strong> 
+                    <a href="tel:2069196886" class="contact-link">206-919-6886</a><br>
+                    💬 <em>Open — pick your app (Phone, Text, Messenger, or WhatsApp)</em>
+                    </p>
+                </div>
+
+                <button class="contact-button">Learn More About Marci</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Services -->
+    <section class="services" id="services">
+        <div class="container">
+            <header class="services-header">
+                <h1 class="section-title">Our Services</h1>
+                <p class="section-description">
+                    We provide expert guidance and personalized real estate solutions to help you buy, sell, or analyze properties with confidence.
+                </p>
+            </header>
+
+            <div class="services-grid">
+                <article class="service-card">
+                    <div class="service-img">
+                        <img src="images/services/service1.png" alt="Real estate services illustration">
+                    </div>
+                    <h2 class="service-title">Real Estate</h2>
+                    <p class="service-info">
+                    Nervous about your property adventure? Don’t be. Whether you're getting ready to buy or sell your home, exploring investment opportunities, or simply curious about the market, our team ensures you have the best experience possible.
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-img">
+                        <img src="images/services/service2.png" alt="Commercial and residential properties">
+                    </div>
+                    <h2 class="service-title">Commercial & Residential</h2>
+                    <p class="service-info">
+                    Large or small, condo or mansion — we’ll help you find the perfect property at the right price. From fixer-uppers to luxury homes, we know the local community inside and out and are happy to help you invest your hard-earned dollars wisely.
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-img">
+                        <img src="images/services/service3.png" alt="Real estate expertise consultation">
+                    </div>
+                    <h2 class="service-title">Rely on Expertise</h2>
+                    <p class="service-info">
+                    Have questions about affordability, credit, or loan options? Trust us to connect you with the right experts to get the answers you need. We’ll make sure you feel confident and informed every step of the way.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section" id="search">
+        <div class="search-overlay">
+            <div class="container">
+            <header class="section-header">
+                <h1 class="section-title">Find Your Dream Home</h1>
+                <p class="search-description">
+                Explore listings, compare properties, and discover your perfect match — all in one place.
+                </p>
+            </header>
+
+            <form class="search-form" action="#">
+                <h2 class="form-title">Search Listings</h2>
+
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="location">Location</label>
+                        <select id="location">
+                            <option value="">Select Location</option>
+                            <option value="Nevada">Nevada</option>
+                            <option value="Los Angeles">Los Angeles</option>
+                            <option value="New Jersey">New Jersey</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="type">Type</label>
+                        <select id="type">
+                            <option value="">Select Type</option>
+                            <option value="House">House</option>
+                            <option value="Condo">Condo</option>
+                            <option value="Townhome">Townhome</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sort">Sort By</label>
+                        <select id="sort">
+                            <option value="">Newest</option>
+                            <option value="">Oldest</option>
+                            <option value="">Price: Low to High</option>
+                            <option value="">Price: High to Low</option>
+                            <option value="">Bedrooms: Low to High</option>
+                            <option value="">Bedrooms: High to Low</option>
+                            <option value="">Bathrooms: Low to High</option>
+                            <option value="">Bathrooms: High to Low</option>
+                        </select>
+                    </div>
+
+                    <div class="half-form">
+                        <div class="form-group">
+                            <label for="bedrooms">Bedrooms</label>
+                            <select id="bedrooms">
+                                <option value="">Any</option>
+                                <option value="1">1+</option>
+                                <option value="2">2+</option>
+                                <option value="3">3+</option>
+                                <option value="4">4+</option>
+                                <option value="5">5+</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="bathrooms">Bathrooms</label>
+                            <select id="bathrooms">
+                                <option value="">Any</option>
+                                <option value="1">1+</option>
+                                <option value="2">2+</option>
+                                <option value="3">3+</option>
+                                <option value="4">4+</option>
+                                <option value="5">5+</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="half-form min-max">
+                        <div class="form-group">
+                            <label for="minPrice">Min Price</label>
+                            <input type="text" id="minPrice" placeholder="$0" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="maxPrice">Max Price</label>
+                            <input type="text" id="maxPrice" placeholder="$1,000,000+" />
+                        </div>
+                    </div>
+
+                    <button type="submit" class="search-btn">Search Now</button>
+                </div>
+            </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Partners -->
+    <section class="partners" id="partners">
+        <div class="container">
+            <header class="partners-header">
+                <h2 class="section-title">Our Partners</h2>
+                <p class="section-description">
+                    We’re proud to collaborate with trusted organizations that share our values of professionalism, integrity, and excellence in real estate.
+                </p>
+            </header>
+
+            <div class="partners-logos">
+                <img src="images/ridge.png" alt="Ridge Realty" />
+                <img src="images/equalHousing.png" alt="Equal Housing Opportunity" />
+                <img src="images/realtor.png" alt="Realtor Association" />
+                <img src="images/pahrump.png" alt="Pahrump Chamber of Commerce" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Gallery Section -->
+    <section class="gallery-section">
+        <div class="gallery-wrapper">
+            <!-- Left Side -->
+            <div class="gallery-text">
+                <h2 class="gallery-title">Our Gallery</h2>
+                <p class="gallery-description">
+                    Explore our proudest moments — beautifully staged homes, sold properties, and spaces that inspire.
+                </p>
+                <ul class="gallery-list">
+                    <li>Modern Homes</li>
+                    <li>Luxury Interiors</li>
+                    <li>Mountain Views</li>
+                    <li>Family Spaces</li>
+                </ul>
+            </div>
+
+            <!-- Right Side (Carousel) -->
+            <div class="gallery-carousel swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/gallery/gallery1.jpeg" alt="Gallery 1"></div>
+                    <div class="swiper-slide"><img src="images/gallery/gallery2.jpeg" alt="Gallery 2"></div>
+                    <div class="swiper-slide"><img src="images/gallery/gallery3.jpeg" alt="Gallery 3"></div>
+                    <div class="swiper-slide"><img src="images/gallery/gallery4.jpeg" alt="Gallery 4"></div>
+                    <div class="swiper-slide"><img src="images/gallery/gallery5.jpeg" alt="Gallery 5"></div>
+                    <div class="swiper-slide"><img src="images/gallery/gallery6.jpeg" alt="Gallery 6"></div>
+                </div>
+
+                <!-- Pagination Dots -->
+                <div class="swiper-pagination"></div>
+
+                <!-- Navigation -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Get It Sold -->
+    <section class="get-sold-section" id="get-it-sold">
+        <div class="container">
+            <header class="section-header">
+                <h1 class="section-title">Get It Sold</h1>
+                <p class="section-description">
+                    Delivering outstanding results with experience, strategy, and dedication — helping you sell fast and for top dollar.
+                </p>
+            </header>
+
+            <div class="sold-grid">
+                <article class="sold-card">
+                    <div class="sold-image">
+                        <img src="images/kitchen.jpg" alt="Luxury kitchen interior" />
+                    </div>
+                    <h2 class="sold-title">Top Residential Sales Last 5 Years</h2>
+                    <p class="sold-info">
+                    We helped nearly 90 clients in 2021 and closed $28.5 million in sales! Our team works hard every day to grow and learn so that we continue to excel in our market. Our clients deserve our best — and we make sure our best gets better every year.
+                    </p>
+                </article>
+
+                <article class="sold-card">
+                    <div class="sold-image">
+                        <img src="images/house.jpg" alt="Beautiful home exterior" />
+                    </div>
+                    <h2 class="sold-title">Don’t Just List It...</h2>
+                    <p class="sold-info">
+                    Get it SOLD! We exhaust every avenue to ensure our listings reach every potential buyer, securing top dollar for your home.
+                    </p>
+                </article>
+
+                <article class="sold-card">
+                    <div class="sold-image">
+                        <img src="images/keys.jpg" alt="House keys and sold sign" />
+                    </div>
+                    <h2 class="sold-title">Guide to Buyers</h2>
+                    <p class="sold-info">
+                    Nobody knows the market like we do. Enjoy having a pro at your side — from market analysis and upgrade lists to trusted contractors on speed dial.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section class="contact-section">
+        <div class="container">
+            <header class="section-header">
+                <h1 class="section-title">Contact Us</h1>
+                <p class="section-description">
+                    Get in touch with us — we’d love to help you find or sell your next home.
+                </p>
+            </header>
+
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <form class="contact-form" action="#">
+                    <h2 class="form-title">Send a Message</h2>
+
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your Name" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email*</label>
+                        <input type="email" id="email" placeholder="Your Email" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="4" placeholder="Write your message..."></textarea>
+                    </div>
+
+                    <button type="submit" class="send-btn">Send Message</button>
+                </form>
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+
+                    <div class="contact-info1">
+                        <h2>Marci Metzger - THE RIDGE REALTY GROUP</h2>
+                        <p><strong>Address:</strong> 3190 HW-160, Suite F, Pahrump, Nevada 89048, United States</p>
+                        <p><strong>Phone:</strong> (206) 919-6886</p>
+                    </div>
+
+                    <div class="contact-info2">
+                        <h2>Office Hours</h2>
+                        <p>Open Today: 8:00 am - 7:00 pm</p>
+                        <p>Open Daily: 8:00 am - 7:00 pm</p>
+                        <p>Appointments outside office hours available upon request. Just call!</p>
+                    </div>
+
+                    <a
+                    href="https://api.whatsapp.com/send/?phone=14259412560&text&type=phone_number&app_absent=0"
+                    target="_blank"
+                    class="whatsapp-btn"
+                    >
+                    💬 Message Us on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Google Map -->
+            <div class="google-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3317.0780420627553!2d-115.9830327234534!3d36.20615277240973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8b9cb6e77a2d7%3A0x7b2bba1573a3b04!2sPahrump%2C%20NV!5e0!3m2!1sen!2sus!4v1718146291982!5m2!1sen!2sus"
+                    width="100%"
+                    height="350"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <h2 class="footer-title">MARCI METZGER Homes</h2>
+            <p class="footer-description">
+            With nearly 30 years of real estate experience, Marci Metzger provides trusted expertise in helping clients buy, sell, and invest in Pahrump and beyond. 
+            Professional service with a personal touch — your dream home awaits.
+            </p>
+
+            <div class="footer-media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-yelp"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-copy">
+            © 2025 MARCI METZGER Homes — All Rights Reserved
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   
+</body>
+</html>
