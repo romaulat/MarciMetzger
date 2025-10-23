@@ -511,7 +511,7 @@ body {
     }
 
     .about-text, .contact-text{
-        font-size: 14px;
+        font-size: 15px;
     }
 }
 
@@ -1312,7 +1312,7 @@ body {
 
 .contact-form .send-btn:hover {
   background-color: #9f7a4d;
-  transform: translateY(-2px);
+  transform: scale(1.05)
 }
 
 /* === Contact Info === */
@@ -1383,5 +1383,104 @@ body {
   .whatsapp-btn {
     width: 100%;
     text-align: center;
+  }
+}
+
+/* === Reviews Section === */
+.reviews-section {
+  background-color: #fff;
+  padding: 80px 2rem;
+  text-align: center;
+}
+
+.section-header {
+  max-width: 700px;
+  margin: 0 auto 3rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.section-description {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.review-card {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.review-card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.review-text {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.review-author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.review-author i {
+  font-size: 2.5rem;
+  color: #b38b59;
+}
+
+.review-author h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #b38b59;
+  margin: 0;
+}
+
+.review-author p {
+  font-size: 0.9rem;
+  color: #777;
+  margin: 0;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .reviews-section {
+    padding: 60px 1.5rem;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .review-text {
+    font-size: 1rem;
   }
 }
