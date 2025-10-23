@@ -754,6 +754,11 @@ body {
   padding: 80px 2rem;
 }
 
+.search-overlay .section-title{
+  color: #fff;
+}
+
+
 /* Description under the title */
 .search-description {
   font-size: 1.1rem;
