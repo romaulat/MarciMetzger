@@ -1047,40 +1047,97 @@ body {
   margin: 0 auto 3rem;
 }
 
+/* Partner Cards Layout */
 .partners-logos {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  gap: 3rem;
+  align-items: stretch;
+  gap: 2rem;
 }
 
-.partners-logos img {
-  max-width: 150px;
+/* Individual Partner Card */
+.partner-card {
+  background-color: #fff; /* white card */
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 230px;
+  border: 1px solid #eee; /* subtle border for depth */
+  overflow: hidden;
+}
+
+.partner-card img {
+  max-width: 120px;
   height: auto;
-  transition: all 0.3s ease;
+  margin: 2rem;
+}
+
+.partner-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.partner-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a4dab; /* blue text like screenshot */
+  margin-bottom: 0.3rem;
+}
+
+.partner-info {
+  font-size: 0.9rem;
+  color: #555; /* secondary text */
+}
+
+.partner-details{
+  width: 100%;
+  height: 100%;
+  background: rgb(214 210 210 / 58%);
+  padding: 1.5rem 1rem;
 }
 
 /* === Responsive === */
+@media (max-width: 1024px) {
+  .partner-card {
+    width: 160px;
+  }
+}
+
 @media (max-width: 768px) {
   .partners-logos {
-    gap: 2rem;
+    gap: 1.5rem;
   }
 
-  .partners-logos img {
-    max-width: 120px;
+  .partner-name {
+    font-size: 0.95rem;
+  }
+
+  .partner-info {
+    font-size: 0.85rem;
   }
 }
 
 @media (max-width: 480px) {
-  .partners-logos img {
-    max-width: 90px;
+  .partners-logos {
+    gap: 1rem;
+  }
+
+  .partner-name {
+    font-size: 0.9rem;
+  }
+
+  .partner-info {
+    font-size: 0.8rem;
   }
 }
 
 /* === Gallery Section === */
 .gallery-section {
-  background-color: #b38b59;
+  background-color: #6b4226;
   color: #fff;
   padding: 80px 2rem;
 }
