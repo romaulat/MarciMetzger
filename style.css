@@ -646,7 +646,7 @@ body {
 
 /* === Get it Sold === */
 .get-sold-section {
-  padding: 80px 2rem;
+  padding: 65px 2rem;
   background-color: #edeaea;
   color: #333;
   text-align: center;
@@ -1041,7 +1041,7 @@ body {
 /* === Partners Section === */
 .partners {
   background-color: #fff;
-  padding: 80px 2rem;
+  padding: 65px 2rem;
   text-align: center;
 }
 
@@ -1230,7 +1230,7 @@ body {
 /* === Contact Section === */
 .contact-section {
   background: #fafafa;
-  padding: 80px 2rem;
+  padding: 65px 2rem 75px;
   color: #333;
 }
 
