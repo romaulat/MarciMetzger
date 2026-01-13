@@ -1065,7 +1065,7 @@ body {
   align-items: center;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 230px;
+  width: 250px;
   border: 1px solid #eee; /* subtle border for depth */
   overflow: hidden;
 }
@@ -1101,12 +1101,6 @@ body {
 }
 
 /* === Responsive === */
-@media (max-width: 1024px) {
-  .partner-card {
-    width: 160px;
-  }
-}
-
 @media (max-width: 768px) {
   .partners-logos {
     gap: 1.5rem;
