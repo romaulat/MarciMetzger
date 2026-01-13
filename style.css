@@ -367,7 +367,7 @@ body {
 
 /* === About === */
 .about {
-  padding: 90px 50px;
+  padding: 75px 50px 80px;
   background-color: #fafafa;
   display: grid;
   justify-content: center;
@@ -494,15 +494,11 @@ body {
 
 @media (max-width: 540px) {
   .about{
-      padding-bottom: 50px;
+      padding-bottom: 30px;
     }
 }
 
 @media (max-width: 500px) {
-    .about{
-      padding-bottom: 50px;
-    }
-
     .about-image img {
       max-width: 200px;
     }
@@ -1494,7 +1490,7 @@ body {
 
 /* Featured Properties */
 .featured {
-  padding: 4rem 2rem;
+  padding: 3rem 2rem 4rem;
   background: #fff;
   text-align: center;
   color: #333;
@@ -1610,25 +1606,25 @@ body {
 /* === Swiper Navigation Buttons === */
 .featured-swiper .swiper-button-next,
 .featured-swiper .swiper-button-prev {
-  color: #b38b59;
+  color: #d4bfa4 !important;
   top: 50%;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 1rem;
+  height: 1rem;
 }
 
 .featured-swiper .swiper-button-next:hover,
 .featured-swiper .swiper-button-prev:hover {
-  color: #9c6f3f;
+  color: #9c6f3f !important;
 }
 
 /* === Swiper Pagination Dots === */
 .featured-swiper .swiper-pagination-bullet {
-  background: #b38b59;
+  background: #b38b59 !important;
   opacity: 0.7;
 }
 
 .featured-swiper .swiper-pagination-bullet-active {
-  background: #9c6f3f;
+  background: #9c6f3f !important;
   opacity: 1;
 }
 
