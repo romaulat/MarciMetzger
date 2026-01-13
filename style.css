@@ -274,6 +274,7 @@ body {
   border-radius: 50px;
   padding: 14px 36px;
   text-transform: uppercase;
+  text-decoration: none;
   cursor: pointer;
   border: 2px solid #b38b59;
   background: #b38b59;
@@ -1229,7 +1230,7 @@ body {
 
 /* === Contact Section === */
 .contact-section {
-  background: #fafafa;
+  background: #fff;
   padding: 65px 2rem 75px;
   color: #333;
 }
