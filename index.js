@@ -29,3 +29,26 @@ const swiper = new Swiper(".gallery-carousel", {
       disableOnInteraction: false,
     },
 });
+
+const featuredSwiper = new Swiper(".featured-swiper", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  navigation: {
+    nextEl: ".featured-swiper .swiper-button-next",
+    prevEl: ".featured-swiper .swiper-button-prev",
+  },
+  pagination: {
+    el: ".featured-swiper .swiper-pagination",
+    clickable: true,
+  },
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    640: { slidesPerView: 1 },
+    768: { slidesPerView: 2 },
+    1024: { slidesPerView: 3 },
+  },
+});
