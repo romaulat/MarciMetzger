@@ -54,21 +54,30 @@ const featuredSwiper = new Swiper(".featured-swiper", {
 });
 
 const hours = {
-    Monday: "8:00 am - 7:00 pm",
-    Tuesday: "8:00 am - 7:00 pm",
-    Wednesday: "8:00 am - 7:00 pm",
-    Thursday: "8:00 am - 7:00 pm",
-    Friday: "8:00 am - 7:00 pm",
-    Saturday: "8:00 am - 7:00 pm",
-    Sunday: "8:00 am - 7:00 pm"
-  };
+  Monday: "8:00 am - 7:00 pm",
+  Tuesday: "8:00 am - 7:00 pm",
+  Wednesday: "8:00 am - 7:00 pm",
+  Thursday: "8:00 am - 7:00 pm",
+  Friday: "8:00 am - 7:00 pm",
+  Saturday: "8:00 am - 7:00 pm",
+  Sunday: "8:00 am - 7:00 pm"
+};
 
-  const days = Object.keys(hours);
-  const today = days[(new Date().getDay() + 6) % 7];
-  const dropdown = document.getElementById("hoursDropdown");
+const days = Object.keys(hours); // ["Monday", ..., "Sunday"]
+const todayIndex = (new Date().getDay() + 6) % 7; // Sunday=0, Monday=0
+const today = days[todayIndex];
 
-  days.forEach(d =>
-    dropdown.innerHTML += `<option ${d === today ? "selected class='today'" : ""}>
-      ${d}: ${hours[d]}
-    </option>`
-  );
+const dropdown = document.getElementById("hoursDropdown");
+
+// Add all days in order, mark today as selected, disable all to make read-only
+days.forEach(day => {
+  dropdown.innerHTML += `<option ${day === today ? "selected" : ""} disabled>
+    ${day}: ${hours[day]}
+  </option>`;
+});
+
+// Optional: prevent programmatic selection change
+dropdown.addEventListener("change", e => {
+  e.preventDefault();
+  dropdown.value = `${today}: ${hours[today]}`;
+});
