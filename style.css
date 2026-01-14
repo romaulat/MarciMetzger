@@ -1413,10 +1413,34 @@ body {
   color: #666;
 }
 
+/* === Office Hours Dropdown === */
+.contact-info2 select {
+  width: 100%;
+  max-width: 260px;
+  padding: 0.5rem 0.75rem;
+  margin: 0.4rem 0 0.8rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  background: #fff;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Highlight today */
+.contact-info2 option.today {
+  font-weight: 600;
+}
+
+/* Open Today spacing */
+#open-today {
+  margin-bottom: 0.3rem;
+}
+
+
 /* WhatsApp Button */
 .whatsapp-btn {
   display: inline-block;
-  margin-top: 1rem;
+  margin-top: .5rem;
   background-color: #25d366;
   color: #fff;
   padding: 0.9rem 1.5rem;

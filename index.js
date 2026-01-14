@@ -52,3 +52,23 @@ const featuredSwiper = new Swiper(".featured-swiper", {
     1024: { slidesPerView: 3 },
   },
 });
+
+const hours = {
+    Monday: "8:00 am - 7:00 pm",
+    Tuesday: "8:00 am - 7:00 pm",
+    Wednesday: "8:00 am - 7:00 pm",
+    Thursday: "8:00 am - 7:00 pm",
+    Friday: "8:00 am - 7:00 pm",
+    Saturday: "8:00 am - 7:00 pm",
+    Sunday: "8:00 am - 7:00 pm"
+  };
+
+  const days = Object.keys(hours);
+  const today = days[(new Date().getDay() + 6) % 7];
+  const dropdown = document.getElementById("hoursDropdown");
+
+  days.forEach(d =>
+    dropdown.innerHTML += `<option ${d === today ? "selected class='today'" : ""}>
+      ${d}: ${hours[d]}
+    </option>`
+  );
