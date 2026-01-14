@@ -1416,7 +1416,7 @@ body {
 /* === Office Hours Dropdown === */
 .contact-info2 select {
   width: 100%;
-  max-width: 260px;
+  max-width: 240px;
   margin: 0.4rem 0 0.8rem;
   border: none;
   background: #fff;
