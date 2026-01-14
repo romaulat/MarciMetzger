@@ -1731,3 +1731,39 @@ body {
     font-size: 1rem;
   }
 }
+
+/* Cookies */
+#cookie-banner {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #000;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  max-width: 900px;
+  width: calc(100% - 2rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  z-index: 9999;
+  font-size: 0.9rem;
+}
+
+#cookie-banner a {
+  color: #e0b97f;
+  text-decoration: underline;
+}
+
+#cookie-banner button {
+  background: #b38b59;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-weight: 600;
+}
